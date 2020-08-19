@@ -152,6 +152,7 @@ export function buildBoardForm(boardId) {
 
   const categoryCard = document.createElement("div");
   categoryCard.className = "board-form-input";
+  categoryCard.style.marginRight = "50px"
   const categoryLabel = document.createElement("p");
   categoryLabel.innerText = "Category: ";
   const categoryInput = document.createElement("select");
@@ -172,6 +173,7 @@ export function buildBoardForm(boardId) {
   const backgroundInput = document.createElement("select");
   backgroundInput.setAttribute("type", "text");
   backgroundInput.name = "background";
+  backgroundCard.style.marginBottom = "15px"
 
   
   values = ["black_board.jpg", "cork_board.jpg", "dragon.jpg", "green_board.jpg", "monster_truck.jpg", "rocket.png", "school.jpg", "space.jpg", "unicorn.jpg"]
