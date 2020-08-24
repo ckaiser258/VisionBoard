@@ -228,6 +228,11 @@ document.addEventListener("DOMContentLoaded", function () {
   //login/signup form submission
   loginForm.addEventListener("submit", handleLogin);
   signupForm.addEventListener("submit", handleSignup);
+  loginForm.addEventListener("submit", function () {
+    let p = document.createElement("p")
+    p.innerText = "Loading your boards... (this could take up to 20 seconds)"
+    loginForm.insertBefore(p, confirmLogin)
+  });
 
   //login/signup toggle form on button click and toggle hide on cancel
   loginBtn.addEventListener("click", function () {
